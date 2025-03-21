@@ -83,7 +83,7 @@ btn.addEventListener("click", (evt) => {
         let num = Math.floor(0 + Math.random() * 24);
         let random_num = Math.floor(0 + Math.random() * 50);
         localStorage.setItem(`posts${num}`, posts_val.value);
-        posts(`/img/${num}.jpg`, localStorage.getItem(`posts${num}`), usr_name[random_num], usr_handle[random_num], `/img/user/${random_num}.png`);
+        posts(`img/${num}.jpg`, localStorage.getItem(`posts${num}`), usr_name[random_num], usr_handle[random_num], `img/user/${random_num}.png`);
     }
 });
 
@@ -94,7 +94,7 @@ function local_Str_post() {
 
         } else {
             let random_num = Math.floor(0 + Math.random() * 50);
-            posts(`/img/${i}.jpg`, localStorage.getItem(`posts${i}`), usr_name[random_num], usr_handle[random_num], `/img/user/${random_num}.png`);
+            posts(`img/${i}.jpg`, localStorage.getItem(`posts${i}`), usr_name[random_num], usr_handle[random_num], `img/user/${random_num}.png`);
         }
     }
 }
@@ -109,7 +109,7 @@ const para_quote = async () => {
 
     let random_num = Math.floor(0 + Math.random() * 50);
 
-    posts("https://picsum.photos/400/250", data.quote, usr_name[random_num], usr_handle[random_num], `/img/user/${random_num}.png`);
+    posts("https://picsum.photos/400/250", data.quote, usr_name[random_num], usr_handle[random_num], `img/user/${random_num}.png`);
 
 };
 
@@ -125,5 +125,5 @@ lf_post_btn.addEventListener("click", () => {
 for (let i = 0; i < 5; i++) {
     let num = Math.floor(0 + Math.random() * 24);
     let random_num = Math.floor(0 + Math.random() * 50);
-    posts(`/img/${num}.jpg`, usr_post[num], usr_name[random_num], usr_handle[random_num], `/img/user/${random_num}.png`);
+    posts(`img/${num}.jpg`, usr_post[num], usr_name[random_num], usr_handle[random_num], `img/user/${random_num}.png`);
 }
