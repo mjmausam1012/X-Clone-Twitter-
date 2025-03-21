@@ -15,7 +15,7 @@ function who_to(name, handle, image) {
 
 for (let i = 0; i < 3; i++) {
     let random_num = Math.floor(0 + Math.random() * 50);
-    who_to(usr_name[random_num], usr_handle[random_num], `/img/user/${random_num}.png`);
+    who_to(usr_name[random_num], usr_handle[random_num], `img/user/${random_num}.png`);
 }
 
 function live_on_X(name, image) {
@@ -39,5 +39,5 @@ function live_on_X(name, image) {
 
 for (let i = 0; i < 4; i++) {
     let random_num = Math.floor(0 + Math.random() * 50);
-    live_on_X(usr_name[random_num], `/img/user/${random_num}.png`);
+    live_on_X(usr_name[random_num], `img/user/${random_num}.png`);
 }
